@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/Custom.css"/>
+    
+    <title>Cálculo Imposto</title>
+</head>
+<body>
+    <div id="Grupo-Input">
+    
+        <label for="basic">CPF:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="CPFContribuinte" aria-describedby="basic-addon3">
+        </div>
+        
+        <label for="basic">Nome contribuinte:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="NomeContribuinte" aria-describedby="basic-addon3">
+        </div>
+        
+        <label for="basic">Renda Bruta mensal:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="RendaBruta" aria-describedby="basic-addon3">
+        </div>
+
+        <label for="basic">Número de dependentes:</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="NumeroDependentes" aria-describedby="basic-addon3">
+        </div>
+
+        <button type="button" class="btn btn-success" id="BtnSalvar" >Salvar</button>
+        <button type="button" class="btn btn-danger" id="BtnDeletar">Deletar todos</button>
+        <button type="button" class="btn btn-secondary" id="BtnCalcular">Calcular</button>
+
+        <table class="table table-hover" id="Tabela-Principal">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">CPF</th>
+                <th scope="col">NOME</th>
+                <th scope="col">Renda Bruta</th>
+                <th scope="col">Quantidade dependentes</th>
+                <th scope="col">Renda Bruta</th>
+                <th scope="col">Renda Líquida</th>
+                <th scope="col">Valor Imposto de renda</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>col 01</td>
+                <td>col 02</td>
+                <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                <td>col 06</td>
+                <td>col 07</td>
+               </tr>
+            </tbody>
+          </table>
+
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/salvar.js"></script>
+    <script src="./js/deletar.js"></script>
+    <script src="./js/calcular.js"></script>
+    
+</body>
+</html> 
